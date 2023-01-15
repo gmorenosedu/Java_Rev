@@ -1,0 +1,48 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+
+		Scanner sc = new Scanner(System.in);
+
+		int produto, qtd;
+		double total;
+
+		System.out.print("Codigo do produto comprado: ");
+		produto = sc.nextInt();
+
+		System.out.print("Quantidade comprada: ");
+		qtd = sc.nextInt();
+		
+		total = 0.0;
+
+		switch (produto) {
+		case 1:
+			total = qtd * 5.00;
+			break;
+		case 2:
+			total = qtd * 3.50;
+			break;
+		case 3:
+			total = qtd * 4.80;
+			break;
+		case 4:
+			total = qtd * 8.90;
+			break;
+		case 5:
+			total = qtd * 7.32;
+			break;
+		}
+	
+		System.out.printf("Valor a pagar: R$ %.2f\n", total);
+		
+		
+		sc.close();
+
+	}
+
+}
