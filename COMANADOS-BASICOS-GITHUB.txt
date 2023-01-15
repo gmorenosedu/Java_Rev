@@ -1,0 +1,43 @@
+Associar uma pasta local com o GITHUB
+
+Sequencia:
+
+1 - Selecionar a pasta no windows (qual deseja salvar), clicar botão direito do mouse e selecionar Git Bash Here;
+2 - Ir para o site do GITHUB e depois criar um novo repositório (Nome do Projeto)
+3 - Sequência de comandos para criar um novo projeto:
+	git init
+	git add .
+	git commit -m "first commit" (No entre Aspas nomear a fase de salvamento: Criacao do Projeto)
+	git branch -M main
+	git remote add origin git@github.com:gmorenosedu/Piatex.git (Copiar essa chave do site do GITHUB e Colar no Terminal Bash do Computador)
+	git push -u origin main (Comando de UPLOAD da primeira vez)
+	
+	git status 
+4 - Sequência de comandos para atualizar uma pasta de projeto
+	git status
+	git add . 
+	git commit -m "<informar as alteracoes aqui>"
+	git push
+
+5 - Clonando ou Modificar um projeto de um repositorio remoto (Sequência de comandos)
+
+	git clone git@github.com:gmorenosedu/Piatex.git (exemplo do Porjeto da Piatex) - Esse comando cria o projeto no computador local
+	
+6 - Trabalhando com o Projeto Clonado (Salvar Modificações) 
+
+	git add . 
+	git commit -m "<informar as alteracoes aqui>"
+	git push
+
+	Opcional:
+
+	git log (mostra a sequência de salvamentos na pasta do projeto)
+	git log --oneline (mostra a sequência de salvamentos na pasta do projeto "Resumida")
+
+ 
+
+ 	
+	
+	
+	
+ 
